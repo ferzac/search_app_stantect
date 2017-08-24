@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC  
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+"http://struts.apache.org/dtds/struts-2.0.dtd">  
+  
+<struts>  
+	<constant name="struts.devMode" value="true" />  
+	<package name="main" namespace="/" extends="struts-default">
+		<action name="home" >
+            <result>/index.jsp</result>
+        </action>
+		<action name="search" class="com.fercho.app.action.SearchAction" method="search">
+			<result name="success">/resultsearch.jsp</result>
+			<result name="error">/error.jsp</result>  
+		</action>
+		<action name="loadaction" >
+            <result>/load.jsp</result>
+        </action>
+		<action name="loadData" class="com.fercho.app.action.SearchAction"  method="loadData">
+            <result name="success">/load.jsp</result>
+			<result name="error">/error.jsp</result>
+        </action>
+	</package>
+</struts>  
