@@ -23,10 +23,10 @@
 	</div>
 	<div id="body">
 		<div id="tagline">
-			<h1>Search Form</h1>
+			<h1>Load data</h1>
 			<form:form action="loadData">  
-				<h2><a>Click the button to load the first records into SOLR server</a></h2>
-				<form:submit />
+				<h2><a>Click the button to load the first records into Solr server</a></h2>
+				<form:submit value="LOAD"/>
 			</form:form>
 			<br/>
 			<s:property value="results"/>

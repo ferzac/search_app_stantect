@@ -25,6 +25,7 @@
 		<div id="tagline">
 			<h1>Search Form</h1>
 			<form:form action="search">  
+				<a>You can use "*" to get all the records</a>
 				<form:textfield name="item" label="Name Search " maxlength="20"/>
 				<form:submit />
 			</form:form>

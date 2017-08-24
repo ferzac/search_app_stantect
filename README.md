@@ -73,5 +73,9 @@ $>bin/solr create -c 'tecdictionary'
 $><TOMCAT_HOME>/bin/startup.sh
 ```
 
-# Screen-Shots
+# Load data
+* To load the data to the collection go to *Load Data* table
+* Click the button to load fake data
+
+# Screen-Shots Mobile
 ![Mobile](SearchApp_Mobile.png)

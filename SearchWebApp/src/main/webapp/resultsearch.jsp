@@ -23,7 +23,7 @@
 	</div>
 	<div id="body">
 		<div id="tagline">
-			<h1>Results found</h1>
+			<h1>Records found</h1>
 			 <br/>
 			 <s:textarea name="results" col="200" rows="60" style="width: 400px; height: 300px;overflow-y: auto;" />
 			 <br/>

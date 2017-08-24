@@ -60,7 +60,7 @@ public class SolrManager
 		FakeData d = new FakeData();
 		int i;
 		
-		for (i = 0; i < 10; i++) {	
+		for (i = 0; i < 900; i++) {	
 			solr.addBean(new DataBean(d.id(), d.name(), d.email(), d.address(), d.phone()));
 			solr.commit();
 		}
