@@ -72,3 +72,6 @@ $>bin/solr create -c 'tecdictionary'
 ```
 $><TOMCAT_HOME>/bin/startup.sh
 ```
+
+# Screen-Shots
+![Mobile](SearchApp_Mobile.png)
