@@ -74,8 +74,8 @@ $><TOMCAT_HOME>/bin/startup.sh
 ```
 
 # Load data
-* To load the data to the collection go to *Load Data* table
-* Click the button to load fake data
+* To load the data into the collection. Go to *Load Data* tab
+* Click the Load button 
 
 # Screen-Shots Mobile
 ![Mobile](SearchApp_Mobile.png)
