@@ -22,7 +22,7 @@ import com.fercho.app.tools.FakeData;
  */
 public class SolrManager 
 {
-	private final String sorlUtl = "http://localhost:8983/solr/tecdictionary"; // techproducts
+	private final String sorlUtl = "http://localhost:8983/solr/tecdictionary";
 	
 	public String searchData (String value) throws IOException, SolrServerException
 	{
@@ -30,7 +30,7 @@ public class SolrManager
 		SolrQuery query = new SolrQuery();
 		String rows = "";
 		
-		query.set("q", value);//inStock:false
+		query.set("q", value);
 		QueryResponse response = solr.query(query);
 		 
 		SolrDocumentList docList = response.getResults();

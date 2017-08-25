@@ -1,12 +1,6 @@
 package com.fercho.app.action;
 
-import org.apache.struts2.interceptor.ServletRequestAware;
-import org.apache.struts2.interceptor.ServletResponseAware;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import com.fercho.app.solr.SolrManager;
-import org.apache.solr.common.SolrDocument;
 import com.opensymphony.xwork2.ActionSupport;
 
 /**
@@ -14,10 +8,9 @@ import com.opensymphony.xwork2.ActionSupport;
  * @version 1.0.0
  * Struts Action class
  */
-public class SearchAction extends ActionSupport implements ServletRequestAware, ServletResponseAware 
+public class SearchAction extends ActionSupport 
 {
-	private HttpServletRequest  request;
-	private HttpServletResponse  response;
+	private static final long serialVersionUID = -8160414590517326217L;
 	
 	private String item;
 	private String results;
@@ -30,6 +23,7 @@ public class SearchAction extends ActionSupport implements ServletRequestAware, 
 			return "success";
 		} catch (Exception e) {
 			e.printStackTrace();
+			addActionError("Unexpected Error happen Plese try again");
 			return "error";
 		}
 		
@@ -43,6 +37,7 @@ public class SearchAction extends ActionSupport implements ServletRequestAware, 
 			return "success";
 		} catch (Exception e) {
 			e.printStackTrace();
+			addActionError("Unexpected Error happen Plese try again");
 			return "error";
 		}
 	}
@@ -61,13 +56,5 @@ public class SearchAction extends ActionSupport implements ServletRequestAware, 
 
 	public void setItem(String item) {
 		this.item = item;
-	}
-	
-	public void setServletRequest(HttpServletRequest arg0) {
-		this.request = arg0;
-	}
-
-	public void setServletResponse(HttpServletResponse arg0) {
-		this.response = arg0;
 	}
 }

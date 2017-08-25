@@ -24,6 +24,7 @@
 	<div id="body">
 		<div id="tagline">
 			<h2>Error</h2>
+			<br/>
 			<s:actionerror />
 		</div>
 		<img src="images/lady-in-yoga.jpg" alt="lady doing yoga" class="figure">
