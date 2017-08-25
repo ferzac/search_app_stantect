@@ -1,17 +1,17 @@
 <%@ taglib uri="/struts-tags" prefix="s" %>
-<%@ taglib uri="/struts-tags" prefix="form"%>  
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<title>Search Engine</title>
+		<meta http-equiv="refresh" content="0.5;url='<s:url includeParams="all" />'">  
+		<title>Search Engine Processing</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/mobile.css">
 		<script type='text/javascript' src='js/mobile.js'></script>
 	</head>
 	<div id="header">
-		<h1><a href="home">Search Engine</a></h1>
+		<h1><a href="#">Search Engine</a></h1>
 		<ul id="navigation">
 			<li class="current">
 				<a href="home">Home</a>
@@ -23,14 +23,10 @@
 	</div>
 	<div id="body">
 		<div id="tagline">
-			<h1>Search Form</h1>
-			<form:form action="search">  
-				<a>You can search by whole name/lastname or partial </a>
-				<form:textfield name="item" label="Name Search " maxlength="20"/>
-				<form:submit />
-			</form:form>
+			<h2>Your request is ...</h2>
+			<img src="images/waiting.gif">
 		</div>
-		<img src="images/lady-in-yoga.jpg" alt="lady doing yoga" class="figure">
+		
 	</div>
 	<div id="footer">
 		<div>

@@ -25,7 +25,7 @@
 		<div id="tagline">
 			<h1>Load data</h1>
 			<form:form action="loadData">  
-				<h2><a>Click the button to load the first records into Solr server</a></h2>
+				<h2><a>Click the button to load records into Solr.</a></h2>
 				<form:submit value="LOAD"/>
 			</form:form>
 			<br/>

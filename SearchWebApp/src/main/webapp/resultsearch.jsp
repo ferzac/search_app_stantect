@@ -25,7 +25,7 @@
 		<div id="tagline">
 			<h1>Records found</h1>
 			 <br/>
-			 <s:textarea name="results" col="200" rows="60" style="width: 400px; height: 300px;overflow-y: auto;" />
+			 <s:textarea name="results" col="200" rows="1000" style="width: 400px; height: 300px;overflow-y: auto;" />
 			 <br/>
 			 <a href="home">BACK</a>
 		</div>

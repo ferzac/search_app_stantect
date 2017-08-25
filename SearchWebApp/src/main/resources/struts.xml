@@ -17,8 +17,11 @@
             <result>/load.jsp</result>
         </action>
 		<action name="loadData" class="com.fercho.app.action.SearchAction"  method="loadData">
+			<interceptor-ref name="params"/>  
+			<interceptor-ref name="execAndWait"/>  
             <result name="success">/load.jsp</result>
 			<result name="error">/error.jsp</result>
+			<result name="wait">/waitdiatepage.jsp</result>  
         </action>
 	</package>
 </struts>  
