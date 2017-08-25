@@ -54,6 +54,12 @@ public class SolrManager
 		return rows;
 	}
 	
+	/**
+	 * Create Fake Data for the fields: Id, name, email, address and phone number
+	 * @return
+	 * @throws IOException
+	 * @throws SolrServerException
+	 */
 	public String createData() throws IOException, SolrServerException
 	{
 		HttpSolrClient solr = new HttpSolrClient.Builder(sorlUtl).build();
@@ -65,16 +71,5 @@ public class SolrManager
 			solr.commit();
 		}
 		return "Records loaded " + i; 
-	}
-	
-	public static void main(String [] args)
-	{
-		try {
-			SolrManager m = new SolrManager();
-			
-			m.createData();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 }

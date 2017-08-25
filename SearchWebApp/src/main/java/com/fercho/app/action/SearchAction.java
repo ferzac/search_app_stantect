@@ -15,6 +15,10 @@ public class SearchAction extends ActionSupport
 	private String item;
 	private String results;
 	
+	/**
+	 * Search into the collection for any patter similar to the input
+	 * @return String with the transaction result Success or Error
+	 */
 	public String search()
 	{
 		try {
@@ -28,7 +32,10 @@ public class SearchAction extends ActionSupport
 		}
 		
 	}
-	
+	/**
+	 * Load fake data into Solr collection 
+	 * @return String with the transaction result Success or Error
+	 */
 	public String loadData()
 	{
 		try {
@@ -42,6 +49,7 @@ public class SearchAction extends ActionSupport
 		}
 	}
 	
+	//Setters and Getters
 	public String getResults() {
 		return results;
 	}
