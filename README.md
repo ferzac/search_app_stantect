@@ -1,13 +1,13 @@
 
-## Required tools :
+## Required Tools
 * [Maven](https://maven.apache.org/) 3.2.1
 * JDK 8
 * [Tomcat](https://tomcat.apache.org/download-70.cgi) 6.0.39 +
 * [Solr](http://www.apache.org/dyn/closer.lua/lucene/solr/6.6.0) 6.6.0
 * [Git](https://www.atlassian.com/git/tutorials/install-git) install
 
-## Download source code
-* From [GIT](https://github.com/ferzac/search_app_stantect.git) clone or download the code
+## Download Source Code
+* Clone the following code below or download from [GIT](https://github.com/ferzac/search_app_stantect.git)
 ```
 $>git clone https://github.com/ferzac/search_app_stantect.git
 Cloning into 'search_app_stantect'...
@@ -24,7 +24,7 @@ total 8
 -rw-r--r--  1 ferzac  staff  1451 24 Aug 15:06 pom.xml
 drwxr-xr-x  3 ferzac  staff   102 24 Aug 15:06 src
 ```
-* Create WAR file
+* Create WAR file.
 ```
 $>mvn install
 [INFO] Scanning for projects...
@@ -47,35 +47,35 @@ $>mvn install
 * To install tomcat follow the tutorial on [http://www.yorku.ca/jhuang/examples/tomcat-install.html](http://www.yorku.ca/jhuang/examples/tomcat-install.html)
 
 ## Install Sorl
-* Download Sorl 6.6.0 from [http://apache.mirror.colo-serv.net/lucene/solr/6.6.0/](http://apache.mirror.colo-serv.net/lucene/solr/6.6.0/)
-* Unzip the file
+* Download Sorl 6.6.0 from [http://apache.mirror.colo-serv.net/lucene/solr/6.6.0/](http://apache.mirror.colo-serv.net/lucene/solr/6.6.0/).
+* Unzip the file.
 ```
 $>tar -zxvf solr-6.6.0.tgz
 ```
-### Start Solr server and create collection
-* Go to *solr-6.6.0* folder
+### Start Solr Server and Create Collection
+* Go to *solr-6.6.0* folder.
 ```
 $>cd solr-6.6.0/
 ```
-* Start server
+* Start server.
 ```
 $>bin/solr start
 ```
-* Create Collection
+* Create Collection.
 ```
 $>bin/solr create -c 'tecdictionary'
 ```
 
-## Deploy application
-* From *search_app_stantect/SearchWebApp/target* copy the war file *SearchWebApp.war* to <TOMCAT_HOME>/webapps/
-* Start Tomcat
+## Deploy the Application
+* From *search_app_stantect/SearchWebApp/target* copy the War file *SearchWebApp.war* to <TOMCAT_HOME>/webapps/
+* Start Tomcat.
 ```
 $><TOMCAT_HOME>/bin/startup.sh
 ```
 
-# Load data
-* To load the data into the collection. Go to *Load Data* tab
-* Click the Load button 
+# Load Data
+* To load the data into the collection go to *Load Data* tab.
+* Click the Load button.
 
-# Screen-Shots Mobile
+# Screen-Shot (Mobile)
 ![Mobile](SearchApp_Mobile.png)
